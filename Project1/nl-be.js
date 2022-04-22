@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : Dutch [nl]
+//! locale : Dutch (Belgium) [nl-be]
 //! author : Joris Röling : https://github.com/jorisroling
 //! author : Jacob Middag : https://github.com/middagj
 
@@ -34,7 +34,7 @@
         ],
         monthsRegex = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
 
-    var nl = moment.defineLocale('nl', {
+    var nlBe = moment.defineLocale('nl-be', {
         months: 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split(
             '_'
         ),
@@ -66,7 +66,7 @@
         longDateFormat: {
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
-            L: 'DD-MM-YYYY',
+            L: 'DD/MM/YYYY',
             LL: 'D MMMM YYYY',
             LLL: 'D MMMM YYYY HH:mm',
             LLLL: 'dddd D MMMM YYYY HH:mm',
@@ -90,8 +90,6 @@
             hh: '%d uur',
             d: 'één dag',
             dd: '%d dagen',
-            w: 'één week',
-            ww: '%d weken',
             M: 'één maand',
             MM: '%d maanden',
             y: 'één jaar',
@@ -110,6 +108,6 @@
         },
     });
 
-    return nl;
+    return nlBe;
 
 })));
